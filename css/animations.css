@@ -1,0 +1,12 @@
+.producto, .tarjeta-grid__boton {
+    transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 6px 6px  rgba(131, 114, 52, 0.6);
+}
+.tarjeta-grid__boton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 4px 4px  rgba(23, 22, 21, 0.7);
+}
