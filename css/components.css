@@ -10,10 +10,12 @@
     color:rgb(233, 226, 226);
 }
 .tarjeta-grid__imagen{
-    width: 100%;
+    width: 90%;
     object-fit: cover;
     aspect-ratio: 4/3;
     border-radius: 12px;
+    justify-self: center;
+    margin-bottom: 1rem;
 }
 .tarjeta-grid__texto{
     color: #fff;
