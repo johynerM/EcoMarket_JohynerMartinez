@@ -11,23 +11,31 @@
 </head>
 <body>
     <header class="encabezado">
+        <input class="encabezado__abierto" type="checkbox" id="abre-cierra">
         <a class="encabezado__enlace-logo" href="index.html">
-            <img class="encabezado__logo" src="img/logos/logo.jfif" alt="logo">
+            <img class="encabezado__logo" src="img/logos/logo.jfif" alt="EcoMarket, ir al inicio">
         </a>
-        <nav class="menu">
+        <nav class="menu" aria-label="Menú principal">
             <ul class="menu__lista">
-                <li><a class="menu__enlace menu__enlace--activo" href="index.html"> Inicio </a></li>
-                <li><a class="menu__enlace" href="views/productos.html"> Nuestros Productos </a> </li>
-                <li><a class="menu__enlace" href="views/sobre-nosotros.html"> Sobre Nosotros </a> </li>
-                <li><a class="menu__enlace" href="views/contacto.html"> Contactanos </a> </li>
+                <li><a class="menu__enlace menu__enlace--activo" href="index.html">Inicio</a></li>
+                <li><a class="menu__enlace" href="views/productos.html">Nuestros Productos</a></li>
+                <li><a class="menu__enlace" href="views/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="menu__enlace" href="views/contacto.html">Contáctanos</a></li>
             </ul>
         </nav>
-        <a class="encabezado__carrito" href="PONER LA PAGINA DEL CARRITO">
-            <img class="encabezado__carrito-logo" src="img/logos/carrito_logo.jpeg" alt="logo carrito" >
-        </a>
-        <a class="encabezado__buscar" href="PONER LA PAGINA DEL BUSCAR">
-            <img class="encabezado__buscar-logo" src="img/logos/buscar_logo.jpeg" alt="logo buscar">
-        </a>
+        <div class="encabezado__accesos">
+            <a class="encabezado__carrito" href="views/carrito.html">
+                <img class="encabezado__carrito-logo" src="img/logos/carrito_logo.jpeg" alt="Ir al carrito de compras">
+            </a>
+            <div class="encabezado__buscar" role="search">
+                <input class="buscar__texto" type="search" placeholder="Busca aquí tu producto deseado" aria-label="Buscar productos">
+                <button class="buscar__boton" type="button">
+                    <img src="img/logos/buscar_logo.jpeg" alt="Buscar">
+                </button>
+            </div>
+            <label class="boton__menu" for="abre-cierra">Menú</label>
+        </div>
+    </header>
     </header>
     <main class="principal">
         <h1 class="principal_titulo"> Pagina Principal </h1>
@@ -72,9 +80,9 @@
         </nav>
         <nav class="redes">
             <ul class="redes_lista">
-                <li class="redes__instagram"><a  href="#" target="_blank" rel="noopener noreferrer"> Instagram </a> </li>
-                <li class="redes__tiktok"><a  href="#" target="_blank" rel="noopener noreferrer"> TikTok </a> </li>
-                <li class="redes__facebook"><a href="#" target="_blank" rel="noopener noreferrer"> Facebook </a> </li>
+                <li class="redes__instagram"><a  href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener noreferrer"> Instagram </a> </li>
+                <li class="redes__tiktok"><a  href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer"> TikTok </a> </li>
+                <li class="redes__facebook"><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA" target="_blank" rel="noopener noreferrer"> Facebook </a> </li>
             </ul>
         </nav>
         <p class="pie__derechos"> ©EcoMarket 2026</p>
