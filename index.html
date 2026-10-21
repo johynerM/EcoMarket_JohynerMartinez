@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
     <title> EcoMarket </title>
 </head>
 <body>
     <header class="encabezado">
-        <img class="encabezado__logo" alt="logo ecomarket" src="img/logo.jpeg" width="80px" height="50px">
-        <nav  class="menu">
+        <a class="encabezado__enlace-logo" href="index.html">
+            <img class="encabezado__logo" src="img/logos/logo.jfif" alt="logo">
+        </a>
+        <nav class="menu">
             <ul class="menu__lista">
                 <li><a class="menu__enlace menu__enlace--activo" href="index.html"> Inicio </a></li>
                 <li><a class="menu__enlace" href="views/productos.html"> Nuestros Productos </a> </li>
@@ -16,48 +22,63 @@
                 <li><a class="menu__enlace" href="views/contacto.html"> Contactanos </a> </li>
             </ul>
         </nav>
-
+        <a class="encabezado__carrito" href="PONER LA PAGINA DEL CARRITO">
+            <img class="encabezado__carrito-logo" src="img/logos/carrito_logo.jpeg" alt="logo carrito" >
+        </a>
+        <a class="encabezado__buscar" href="PONER LA PAGINA DEL BUSCAR">
+            <img class="encabezado__buscar-logo" src="img/logos/buscar_logo.jpeg" alt="logo buscar">
+        </a>
     </header>
     <main class="principal">
+        <h1 class="principal_titulo"> Pagina Principal </h1>
         <section class="tarjeta__principal">
             <div class="tarjeta-grid">
-                <h2 class="tarjeta-grid__titulo"> Sontenibilidad y Amor por nuestro hogar común</h2>
+                <h2 class="tarjeta-grid__titulo"> Sostenibilidad y Amor por nuestro hogar común</h2>
                 <p class="tarjeta-grid__texto"> Productos amigables con la naturaleza, no desperdiciamos nada, revisa nuestros productos con seguridad  </p>
-                <div class="boton">
-                    <a class="boton__titulo" href="views/productos.html"> Explora Nuestors Productos </a>
-                </div>
-                <!-- Width y heigth de imagenes temporales mientras se aplica en el CSS -->
-                <img class="tarjeta-grid__imagen" src="img/productos-principal.jpeg" alt="imagen prioncipal de productos" width="250px" height="200px">
+                <a class="tarjeta-grid__boton" href="views/productos.html"> Explora los Producto </a>
+                <img class="tarjeta-grid__imagen" src="img/productos/productos-principal.jpeg" alt="imagen prioncipal de productos">
             </div>
             <section class="destacados">
                 <h2 class="destacados__titulo"> Nuestros Productos Destacados </h2>
-                <div class="cajitas-grid">
-                    <article class="destacados">
-                        <img class="cajitas-grid__imagen" alt="imagen de producto destacado" src="img/chicle.jpeg" width="125px" height="100px">
-                        <h3 class="cajitas-grid__titulo"> Chicle-free </h3>
-                        <p class="cajitas-grid__descripcion"> Este paquete de chicles esta 100% libre de cualquier plasticos contaminante, mastica con seguridad y confianza </p>
-                        <div class="boton">
-                            <h3 class="boton__titulo"> Ver más </h3>
-                        </div>
+                <div class="destacados__lista">
+                    <article class="producto">
+                        <img class="producto__imagen" alt="imagen de producto destacado" src="img/productos/chicle.jpeg">
+                        <h3 class="producto__titulo"> Chicle-free </h3>
+                        <p class="producto__descripcion"> Este paquete de chicles esta 100% libre de cualquier plasticos contaminante, mastica con seguridad y confianza </p>
+                        <a class="producto__boton" href="views/productos.html" aria-label="Ver mas sobre chicle-free"> Ver mas </a>
                     </article>
-                    <article class="destacados">
-                        <img class="cajitas-grid__imagen" alt="imagen de producto destacado" src="img/proteina-grillos.jpeg" width="125px" height="100px">
-                        <h3 class="cajitas-grid__titulo"> ProteCrick </h3>
-                        <p class="cajitas-grid__descripcion"> Producto hecho a base de grillos que es una mejor proteina pues es más amigable con el medio ambiente </p>
-                        <div class="boton">
-                            <h3 class="boton__titulo"> Ver más </h3>
-                        </div>
+                    <article class="producto">
+                        <img class="producto__imagen" alt="imagen de producto destacado" src="img/productos/proteina-grillos.jpeg">
+                        <h3 class="producto__titulo"> ProteCrick </h3>
+                        <p class="producto__descripcion"> Producto hecho a base de grillos que es una mejor proteina pues es más amigable con el medio ambiente </p>
+                        <a class="producto__boton" href="views/productos.html" aria-label="Ver mas sobre ProteCrick"> Ver mas </a>
+
                     </article>
-                    <article class="destacados">
-                        <img class="cajitas-grid__imagen" alt="imagen de producto destacado" src="img/bolsa.jpeg" width="125px" height="100px">
-                        <h3 class="cajitas-grid__titulo"> Bolsas de Reuse  </h3>
-                        <p class="cajitas-grid__descripcion"> Este paquete de chicles esta 100% libre de cualquier plasticos contaminante, mastica con seguridad y confianza </p>
-                        <div class="boton">
-                            <h3 class="boton__titulo"> Ver más </h3>
-                        </div>
+                    <article class="producto">
+                        <img class="producto__imagen" alt="imagen de producto destacado" src="img/productos/bolsa.jpeg">
+                        <h3 class="producto__titulo"> Bolsas de Reuse  </h3>
+                        <p class="producto__descripcion"> Este paquete de chicles esta 100% libre de cualquier plasticos contaminante, mastica con seguridad y confianza </p>
+                        <a class="producto__boton" href="views/productos.html" aria-label="Ver mas sobre Bolsas Reuse"> Ver mas </a>
                     </article>
                 </div>
             </section>
     </main>
+    <footer class="pie">
+        <address> <p><a href="mailto:ecomarket@market.com">Este es nuestro Correo </a> </p>
+        <p><a href="tel:+573100000000"> Llamanos al +57: 310 000 0000</a></p>
+        </address>
+        <nav class="legal">
+            <a class="legal__terminos" href="#"> terminos y condiciones  </a> 
+        </nav>
+        <nav class="redes">
+            <ul class="redes_lista">
+                <li class="redes__instagram"><a  href="#" target="_blank" rel="noopener noreferrer"> Instagram </a> </li>
+                <li class="redes__tiktok"><a  href="#" target="_blank" rel="noopener noreferrer"> TikTok </a> </li>
+                <li class="redes__facebook"><a href="#" target="_blank" rel="noopener noreferrer"> Facebook </a> </li>
+            </ul>
+        </nav>
+        <p class="pie__derechos"> ©EcoMarket 2026</p>
+
+    </footer>
 </body>
 </html>
