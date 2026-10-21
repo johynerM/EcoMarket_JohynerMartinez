@@ -18,7 +18,7 @@
     --fuente-titulos: "Montserrat",sans-serif;
     --fuente-texto:"Inter", sans-serif;
     --fuente-alternativa:"Outfit", sans-serif;
-    --radio-bordes:border-radius:15px;
+    --radio-bordes:15px;
 }
 *,
 *::before,
@@ -53,10 +53,10 @@ body{
 h1{
     font-family: var(--fuente-titulos);
     color: var(--color-titulos);
-    font-size: clamp(1.2rem,1.7rem,2rem);
+    font-size: clamp(1.6rem, 1rem + 2.5vw, 2.5rem);
 }
 h2, h3{
     font-family: var(--fuente-titulos);
     color: var(--color-subtitulos);
-    font-size: clamp(1.2rem,1.7rem,2rem);
+    font-size: clamp(1.2rem, 1rem + 1vw, 1.7rem);
 }

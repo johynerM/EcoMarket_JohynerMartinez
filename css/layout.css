@@ -1,0 +1,52 @@
+
+.encabezado{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+    background-color: var(--fondo-encabezado);
+}
+.encabezado__logo{
+    width: 100px;
+}
+.encabezado__accesos{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.encabezado__carrito-logo{
+    width: 30%;
+}
+.buscar__boton img{
+    width: 30%;
+}
+.principal{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+.tarjeta-grid{
+    display: grid;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    background-color: var(--boton-oscuro);
+    border-radius: 24px;
+}
+.tarjeta-grid__titulo{
+    color:rgb(233, 226, 226);
+}
+.tarjeta-grid__imagen{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    border-radius: 12px;
+}
+.destacados__titulo{
+    margin: 2rem 0 1rem;
+}
+.destacados__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
