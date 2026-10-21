@@ -6,6 +6,16 @@
     position: relative;
     padding: 15px;
     background-color: var(--fondo-encabezado);
+    gap: 0.7rem;
+}
+.encabezado__enlace-logo{
+    font-family: var(--fuente-alternativa);
+    color: var(--color-subtitulos);
+}
+.encabezado__abierto{
+    opacity: 0;
+    position: absolute;
+
 }
 .encabezado__logo{
     width: 100px;
@@ -17,6 +27,26 @@
 }
 .encabezado__carrito-logo{
     width: 30%;
+}
+.menu{
+    width: 100%;
+    display: none;
+}
+.menu__lista{
+    display: grid;
+    gap: 0.7rem;
+}
+.menu__enlace{
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--color-titulos);
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #92e2b3;
+}
+.menu__enlace--activo{
+    background-color: var(--boton-oscuro);
+    color: #fff;
 }
 .buscar__boton img{
     width: 30%;
@@ -49,4 +79,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+}
+.pie{
+    background-color: var(--boton-oscuro);
+    color: white;
 }
