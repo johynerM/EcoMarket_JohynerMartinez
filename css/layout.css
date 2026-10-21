@@ -64,7 +64,7 @@
 .encabezado__carrito-logo, img{
     width: 120px;
 }
-
+/* Pie de pagina */
 .pie{
     display: grid;
     gap: 0.7rem;
@@ -80,7 +80,7 @@
     color: var(--color-resalto-verde);
 }
 .pie address{
-    font-size: normal;
+    font-style: normal;
 }
 .pie__derechos{
     font-size: 0.7rem;
@@ -90,4 +90,22 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem 1rem;
+}
+
+.principal{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.destacados{
+    padding: 2rem;
+}
+.destacados__titulo{
+    margin-bottom: 1rem;
+}
+.destacados__lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
