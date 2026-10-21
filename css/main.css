@@ -11,11 +11,14 @@
     --color-error:#b3261e;
     --boton-oscuro:#1e8449;
     --color-verde-mid:#27ae60;
+    --fondo-encabezado:#ffffff;
+    --sombras-tarjetas: 0 2px 8px rgba(21, 19, 19, 0.8);
+
     /* fuentes */
     --fuente-titulos: "Montserrat",sans-serif;
     --fuente-texto:"Inter", sans-serif;
     --fuente-alternativa:"Outfit", sans-serif;
-
+    --radio-bordes:border-radius:15px;
 }
 *,
 *::before,
