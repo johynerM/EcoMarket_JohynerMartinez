@@ -97,3 +97,121 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+/* aspectos de productos */
+.catalogo__busqueda {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 24px ;
+    box-shadow: var(--sombras-tarjetas);
+}
+.buscador__texto {
+    flex: 1;
+    border: 2px solid rgb(133, 115, 86);
+    background: var(--color-fondo);
+}
+.buscador__boton {
+    width: 3rem;
+    height: auto;
+    border: 2px solid rgb(133, 115, 86);
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.buscador__boton img{
+    width: 3rem;
+    height: auto;
+    object-fit: cover;
+}
+/* estilizacino del panel los filtros */
+
+.filtros__grupo {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 24px;
+    box-shadow: var(--sombras-tarjetas);
+}
+.filtros__titulo {
+    font-weight: bold;
+    padding: 0.7rem;
+}
+.filtros__opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.filtros__rango {
+    width: 100%;
+    accent-color: var(--color-verde-mid);
+}
+.filtros__valores {
+    display: flex;
+    justify-content:space-between;
+}
+/* mas detalles para tarjetas */
+
+.producto__precio {
+    font-weight: bold;
+    color: var(--color-subtitulos);
+}
+.producto__stock {
+    padding: 2px;
+    border-radius: 24px;
+    font-size: 0.8rem;
+    align-self:center;
+}
+.producto__stock--disponible {
+    background-color: white;
+    color: var(--color-titulos);
+}
+.producto__stock--agotado {
+    background-color: gray;
+    color: white;
+}
+/* seleccion de producto favoritos */
+
+.producto { position: relative; }
+
+.producto__favorito-input {
+    position: absolute;
+    opacity: 0;
+}
+.producto__favorito {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.producto__favorito-input:checked + .producto__favorito {
+    color: red;
+}
+.producto__favorito-input:focus-visible + .producto__favorito {
+    outline: 3px solid var(--boton-oscuro);
+}
+/* Paginación */
+.paginacion__enlace {
+    display: flex;
+    min-width: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 42px;
+    background-color: var(--color-resalto-verde);
+    color: white;
+}
+.paginacion__enlace--activo {
+    background-color: rgb(196, 146, 90);
+    color: white;
+}

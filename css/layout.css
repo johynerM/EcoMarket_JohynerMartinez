@@ -93,7 +93,7 @@
     margin: 1rem auto;
     max-width: 100%;
 }
-
+/* productos destacados */
 .destacados{
     padding: 2rem;
 }
@@ -105,7 +105,31 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
+/* productos */
 
+.catalogo{
+    width: 98%;
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+}
+.catalogo__contenido {
+    display: flex;
+    gap: 20px;
+}
+
+.catalogo__lista {
+    display: grid;
+    grid-template-columns: 2;
+    gap: 30px;
+}
+
+.paginacion__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 @media (min-width: 600px) {
     .destacados__lista {
