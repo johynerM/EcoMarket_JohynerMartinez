@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <title> EcoMarket </title>
+</head>
+<body>
+    <header class="encabezado">
+        <input class="encabezado__abierto" type="checkbox" id="abre-cierra">
+        <a class="encabezado__enlace-logo" href="index.html">
+            <img class="encabezado__logo" src="../img/logos/logo.jfif" alt="EcoMarket, ir al inicio">
+        </a>
+        <nav class="menu" aria-label="Menú principal">
+            <ul class="menu__lista">
+                <li><a class="menu__enlace" href="../index.html">Inicio</a></li>
+                <li><a class="menu__enlace menu__enlace--activo"" href="views/productos.html">Nuestros Productos</a></li>
+                <li><a class="menu__enlace" href="views/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="menu__enlace" href="views/contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="encabezado__accesos">
+            <a class="encabezado__carrito" href="views/carrito.html">
+                <img class="encabezado__carrito-logo" src="../img/logos/carrito_logo.jfif" alt="Ir al carrito de compras">
+            </a>
+            <div class="encabezado__buscar" role="search">
+                <input class="buscar__texto" type="search" placeholder="Busca aquí tu producto deseado" aria-label="Buscar productos">
+                <button class="buscar__boton" type="button">
+                    <img src="../img/logos/buscar_logo.jfif" alt="Buscar">
+                </button>
+            </div>
+            <label class="boton__menu" for="abre-cierra">Menú</label>
+        </div>
+    </header>
+    <main class="catalogo">
+        <h1 class="catalogo__titulo">Productos</h1>
+        <div class="catalogo__busqueda" aria-label="busqueda-ropa" role="search"> 
+            <input class="buscador__texto" type="search" placeholder="Encuentra tu articulo aqui">
+            <button class="buscador__boton" type="button">
+                <img src="../img/logos/buscar_logo.jfif" alt="logo busqueda">
+            </button>
+        </div>
+        <div class="catalogo__contenido">
+            <aside class="filtros">
+                <fieldset class="filtros__grupo">
+                    <legend class="filtros__titulo">Categorías</legend>
+                    <label class="filtros__opcion">
+                        <input type="checkbox" name="categoria" value="moda"> Moda
+                    </label>
+                    <label class="filtros__opcion">
+                        <input type="checkbox" name="categoria" value="cuidado-personal"> Cuidado personal
+                    </label>
+                    <label class="filtros__opcion">
+                        <input type="checkbox" name="categoria" value="alimentos"> Alimentos
+                    </label>
+                    <label class="filtros__opcion">
+                        <input type="checkbox" name="categoria" value="hogar"> Hogar
+                    </label>
+                </fieldset>
+                <fieldset class="filtros__grupo">
+                    <legend class="filtros__titulo"> Precios </legend>
+                    <label class="filtros__etiqueta" for="precio__maximo">Precio máximo</label>
+                    <input class="filtros__rango" type="range" id="precio__maximo" name="precio"
+                        min="20" max="600" step="20" value="600">
+                    <div class="filtros__valores">
+                        <span>20$ -></span>
+                        <span>600$</span>
+                    </div>
+                </fieldset>                
+            </aside>
+            <section class="catalogo__productos">
+                <h2 class="catalogo__subtitulo">Nuestros productos</h2>
+                <div class="catalogo__lista">
+                    <article class="producto">
+                        <img class="producto__imagen" src="../img/productos/camisa.jfif" alt="camisa de algodon">
+                        <h3 class="producto__titulo">Camiseta con algodon orgánico</h3>
+                        <p class="producto__precio">30$ dolares</p>
+                        <span class="producto__stock producto__stock--disponible">En stock</span>
+                        <input type="checkbox" id="favorito-1" class="producto__favorito-input">
+                        <label for="favorito-1" class="producto__favorito">
+                            <span class="producto__favorito-agregar"> ♥ </span>                        
+                    </article>
+                </div>
+                <nav class="paginacion">
+                    <ul class="paginacion__lista">
+                        <li><a class="paginacion__enlace" href="#">Anterior</a></li>
+                        <li><a class="paginacion__enlace paginacion__enlace--activo" href="#">1</a></li>
+                        <li><a class="paginacion__enlace" href="#">2</a></li>
+                        <li><a class="paginacion__enlace" href="#">3</a></li>
+                        <li><a class="paginacion__enlace" href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
