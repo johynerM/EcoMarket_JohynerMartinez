@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <title> Sobre Nosotros </title>
+</head>
+<body>
+    <header class="encabezado">
+        <input class="encabezado__abierto" type="checkbox" id="abre-cierra">
+        <a class="encabezado__enlace-logo" href="../index.html">
+            <img class="encabezado__logo" src="../img/logos/logo.jfif" alt="EcoMarket, ir al inicio">
+        </a>
+        <nav class="menu" aria-label="Menú principal">
+            <ul class="menu__lista">
+                <li><a class="menu__enlace" href="../index.html">Inicio</a></li>
+                <li><a class="menu__enlace" href="productos.html">Nuestros Productos</a></li>
+                <li><a class="menu__enlace menu__enlace--activo" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="menu__enlace" href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="encabezado__accesos">
+            <a class="encabezado__carrito" href="carrito.html">
+                <img class="encabezado__carrito-logo" src="../img/logos/carrito_logo.jfif" alt="Ir al carrito de compras">
+            </a>
+            <div class="encabezado__buscar" role="search">
+                <input class="buscar__texto" type="search" placeholder="Busca aquí tu producto deseado" aria-label="Buscar productos">
+                <button class="buscar__boton" type="button">
+                    <img src="../img/logos/buscar_logo.jfif" alt="Buscar">
+                </button>
+            </div>
+            <label class="boton__menu" for="abre-cierra">Menú</label>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="historia">
+            <img class="historia__imagen" alt="imagen de historia" src="../img/logos/"/>
+            <div class="historia__contenido">
+                <h1 class="historia__titulo"> Nuestra Historia </h1>
+                <p class="historia__texto"> PONER EL TEXTO DE NUESTRA HISTORIA AQUI  </p>
+            </div>            
+        </section>
+        <section class="principios">
+            <h2 class="principios__titulo"> Nuestros Principios Inquebrantables</h2>
+            <ul class="principios__lista">
+    <!-- Esta misma estructura la repetimos luego -->
+                <li class="princpio"> 
+                    <span class="principio__icono"> </span>
+                    <h3 class="principio__nombre"> No Plasticos </h3>
+                    <p class="princpio__descripcion"> ninguno de nuestros productos debe tener plastico contaminante, solo plastico reusado o reusable </p>
+                </li>
+                <li class="princpio"> 
+                    <span class="principio__icono"> </span>
+                    <h3 class="principio__nombre"> Justicia Comercial </h3>
+                    <p class="princpio__descripcion"> ninguno de nuestros productos debe tener plastico contaminante, solo plastico reusado o reusable </p>
+                </li>
+                <li class="princpio"> 
+                    <span class="principio__icono"> </span>
+                    <h3 class="principio__nombre"> No Plasticos </h3>
+                    <p class="princpio__descripcion"> ninguno de nuestros productos debe tener plastico contaminante, solo plastico reusado o reusable </p>
+                </li>
+                <li class="princpio"> 
+                    <span class="principio__icono"> </span>
+                    <h3 class="principio__nombre"> No Plasticos </h3>
+                    <p class="princpio__descripcion"> ninguno de nuestros productos debe tener plastico contaminante, solo plastico reusado o reusable </p>
+                </li>
+            </ul>
+        </section>
+        <section class="reseñas">
+            <h2 class="reseñas__titulo"> Esto es lo que opinan sobre nosotros </h2>
+            <div class="reseñas__carrusel">
+                <ul class="reseñas__lista">
+                    <li class="reseña">
+                        <img class="reseña__imagen" alt="Imagen de cliente" src="../img/clientes/">
+                        <blockquote class="reseña__cliente"> Excelente! simplemente increible para los amantes del medio ambiente </blockquote>
+                        <p class="reseña__estrellas"> ★★★★★ </p>
+                    </li>
+                    <li class="reseña">
+                        <img class="reseña__imagen" alt="Imagen de cliente" src="../img/clientes/">
+                        <blockquote class="reseña__cliente"> Excelente! simplemente increible para los amantes del medio ambiente </blockquote>
+                        <p class="reseña__estrellas"> ★★★★★ </p>
+                    </li>
+                    <li class="reseña">
+                        <img class="reseña__imagen" alt="Imagen de cliente" src="../img/clientes/">
+                        <blockquote class="reseña__cliente"> Excelente! simplemente increible para los amantes del medio ambiente </blockquote>
+                        <p class="reseña__estrellas"> ★★★★★ </p>
+                    </li>
+                    <li class="reseña">
+                        <img class="reseña__imagen" alt="Imagen de cliente" src="../img/clientes/">
+                        <blockquote class="reseña__cliente"> Excelente! simplemente increible para los amantes del medio ambiente </blockquote>
+                        <p class="reseña__estrellas"> ★★★★★ </p>
+                    </li>
+
+                    <!-- Se tiene que copiar y pegar de nuevo despues cuando ya esten listas todas  -->
+                </ul>
+                <div class="reseñas__puntos" aria-hidden="true">
+                    <span class="reseñas__punto"> 0 </span>
+                    <span class="reseñas__punto"> 0 </span>
+                    <span class="reseñas__punto"> 0 </span>
+                    <span class="reseñas__punto"> 0 </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer class="pie">
+        <address> <p><a href="mailto:ecomarket@market.com">Este es nuestro Correo </a> </p>
+        <p><a href="tel:+573100000000"> Llamanos al +57: 310 000 0000</a></p>
+        </address>
+        <nav class="legal">
+            <a class="legal__terminos" href="#"> terminos y condiciones  </a> 
+        </nav>
+        <nav class="redes">
+            <ul class="redes__lista">
+                <li class="redes__instagram"><a  href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener noreferrer"> Instagram </a> </li>
+                <li class="redes__tiktok"><a  href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer"> TikTok </a> </li>
+                <li class="redes__facebook"><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA" target="_blank" rel="noopener noreferrer"> Facebook </a> </li>
+            </ul>
+        </nav>
+        <p class="pie__derechos"> ©EcoMarket 2026</p>
+
+    </footer>
+</body>
+</html>
