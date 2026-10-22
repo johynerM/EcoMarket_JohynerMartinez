@@ -63,3 +63,37 @@
     box-shadow: var(--sombras-tarjetas);
     justify-content: center;
 }
+/* Encabezado ajustes */
+.buscar__texto{
+    display: none;
+}
+.buscar__boton,
+.encabezado__carrito{
+    display: grid;
+    place-items: center;
+    width:3rem ;
+    height: 3rem;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: white;
+    border: 1.5px solid var(--boton-oscuro);
+    padding: none;
+    cursor: pointer;
+}
+.buscar__boton img,
+.encabezado__carrito img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+}
+.boton__menu{
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--boton-oscuro);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
