@@ -254,17 +254,19 @@
 .reseña{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 0 1.5rem 0 0;
     padding: 1rem;
     border-radius: 24px;
     background-color: #f5f5dc;
     border: 2px solid rgb(120, 30, 30);
     box-shadow: var(--sombras-tarjetas);
+    width: clamp(16rem, 75vw, 22rem);;
 }
 .reseña__imagen{
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
+    aspect-ratio: 4/3;
     background-color: var(--boton-oscuro);
     border-radius: 12px;
 }
@@ -274,13 +276,39 @@
     letter-spacing: 10px;
 }
 .reseñas__punto{
+    flex: 0 0 auto;
     width: 0.6rem;
     height: 0.6rem;
-    background-color: #cfe8d6;
+    border: 0;
     border-radius: 50%;
+    background-color: #a9cdb6;       /* más oscuro que #cfe8d6 para que se vea */
 }
-@media (min-width: 768px){
-    .boton__menu{
-        display: none;
+.reseñas__puntos{
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+
+
+@media (min-width: 800px){
+    .tarjeta-grid{
+        grid-template-columns: 1.2fr 1fr;
+        align-items: center;
+        column-gap: 2rem;
+        padding: 2.5rem;
+    }
+    .tarjeta-grid__titulo,
+    .tarjeta-grid__texto,
+    .tarjeta-grid__boton{
+        grid-column: 1;
+    }
+    .tarjeta-grid__boton{
+        justify-self: start;
+    }
+    .tarjeta-grid__imagen{
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        width: 100%;
+        margin-bottom: 0;
     }
 }
