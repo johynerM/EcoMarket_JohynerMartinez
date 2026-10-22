@@ -139,7 +139,7 @@
 }
 .historia__imagen{
     width: 100%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
     object-fit: cover;
 }
 .historia__texto{
