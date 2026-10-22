@@ -131,6 +131,55 @@
     gap: 20px;
 }
 
+/* Sobre nosotros */
+.historia{
+    display: flex;
+    flex-direction: column ;
+    gap: 1.5rem;
+}
+.historia__imagen{
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.historia__texto{
+    margin-top: 0.7rem;
+}
+/* ESpaciados entre secciones */
+.principios, .reseñas{
+    margin-top: 2rem;
+}
+.principios__titulo, .reseña__titulo{
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.principios__lista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+/* Carrusel de reseñas */
+
+.reseñas__carrusel{
+    overflow: hidden;
+    padding: 1.5rem;
+
+}
+.reseñas__lista{
+    display: flex;
+    width: 100%;
+}
+.reseña{
+    flex: clamp(1.8rem, 2.5vw, 2.8rem);
+    margin-right: 1.5rem;
+}
+.reseñas__puntos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
 @media (min-width: 600px) {
     .destacados__lista {
         grid-template-columns: repeat(2,1fr);
