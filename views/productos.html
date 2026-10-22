@@ -12,19 +12,19 @@
 <body>
     <header class="encabezado">
         <input class="encabezado__abierto" type="checkbox" id="abre-cierra">
-        <a class="encabezado__enlace-logo" href="index.html">
+        <a class="encabezado__enlace-logo" href="../index.html">
             <img class="encabezado__logo" src="../img/logos/logo.jfif" alt="EcoMarket, ir al inicio">
         </a>
         <nav class="menu" aria-label="Menú principal">
             <ul class="menu__lista">
                 <li><a class="menu__enlace" href="../index.html">Inicio</a></li>
-                <li><a class="menu__enlace menu__enlace--activo"" href="views/productos.html">Nuestros Productos</a></li>
-                <li><a class="menu__enlace" href="views/sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a class="menu__enlace" href="views/contacto.html">Contáctanos</a></li>
+                <li><a class="menu__enlace menu__enlace--activo" href="productos.html">Nuestros Productos</a></li>
+                <li><a class="menu__enlace" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="menu__enlace" href="contacto.html">Contáctanos</a></li>
             </ul>
         </nav>
         <div class="encabezado__accesos">
-            <a class="encabezado__carrito" href="views/carrito.html">
+            <a class="encabezado__carrito" href="carrito.html">
                 <img class="encabezado__carrito-logo" src="../img/logos/carrito_logo.jfif" alt="Ir al carrito de compras">
             </a>
             <div class="encabezado__buscar" role="search">
@@ -70,8 +70,20 @@
                         <span>20$ -></span>
                         <span>600$</span>
                     </div>
-                </fieldset>                
+                </fieldset>
+                <fieldset class="filtros__grupo">
+                    <legend class="filtros__titulo">Disponibilidad</legend>
+
+                    <label class="filtros__opcion">
+                        <input type="checkbox" name="stock" value="en-stock"> En Stock
+                    </label>
+
+                    <label class="filtros__opcion">
+                        <input type="checkbox" name="stock" value="agotado"> Agotado
+                    </label>
+                </fieldset>
             </aside>
+            <!-- Aqui estan los 20 Productos! debe haber una forma más automatizada para esto 😔 -->
             <section class="catalogo__productos">
                 <h2 class="catalogo__subtitulo">Nuestros productos</h2>
                 <div class="catalogo__lista">
@@ -82,6 +94,42 @@
                         <span class="producto__stock producto__stock--disponible">En stock</span>
                         <input type="checkbox" id="favorito-1" class="producto__favorito-input">
                         <label for="favorito-1" class="producto__favorito">
+                            <span class="producto__favorito-agregar"> ♥ </span>                        
+                    </article>
+                    <article class="producto">
+                        <img class="producto__imagen" src="../img/productos/bolsa-organica.jfif" alt="bolsa organica">
+                        <h3 class="producto__titulo">Bolsa orgánica</h3>
+                        <p class="producto__precio">5$ dolares</p>
+                        <span class="producto__stock producto__stock--disponible">En stock</span>
+                        <input type="checkbox" id="favorito-2" class="producto__favorito-input">
+                        <label for="favorito-2" class="producto__favorito">
+                            <span class="producto__favorito-agregar"> ♥ </span>                        
+                    </article>
+                    <article class="producto">
+                        <img class="producto__imagen" src="../img/productos/pantalon.jfif" alt="pantalon de lino">
+                        <h3 class="producto__titulo">Pantalon de lino</h3>
+                        <p class="producto__precio">35$ dolares</p>
+                        <span class="producto__stock producto__stock--disponible">En stock</span>
+                        <input type="checkbox" id="favorito-3" class="producto__favorito-input">
+                        <label for="favorito-3" class="producto__favorito">
+                            <span class="producto__favorito-agregar"> ♥ </span>                        
+                    </article>
+                    <article class="producto">
+                        <img class="producto__imagen" src="../img/productos/limpiador.jfif" alt="limpiador de vidrio">
+                        <h3 class="producto__titulo">Limpiador reutilizable</h3>
+                        <p class="producto__precio">10$ dolares</p>
+                        <span class="producto__stock producto__stock--disponible">En stock</span>
+                        <input type="checkbox" id="favorito-4" class="producto__favorito-input">
+                        <label for="favorito-4" class="producto__favorito">
+                            <span class="producto__favorito-agregar"> ♥ </span>                        
+                    </article>
+                    <article class="producto">
+                        <img class="producto__imagen" src="../img/productos/detergente.jfif" alt="detergente biodegradable">
+                        <h3 class="producto__titulo">Detergente con empaque biodegradable</h3>
+                        <p class="producto__precio">8$ dolares</p>
+                        <span class="producto__stock producto__stock--disponible">En stock</span>
+                        <input type="checkbox" id="favorito-5" class="producto__favorito-input">
+                        <label for="favorito-5" class="producto__favorito">
                             <span class="producto__favorito-agregar"> ♥ </span>                        
                     </article>
                 </div>
@@ -97,5 +145,22 @@
             </section>
         </div>
     </main>
+    <footer class="pie">
+        <address> <p><a href="mailto:ecomarket@market.com">Este es nuestro Correo </a> </p>
+        <p><a href="tel:+573100000000"> Llamanos al +57: 310 000 0000</a></p>
+        </address>
+        <nav class="legal">
+            <a class="legal__terminos" href="#"> terminos y condiciones  </a> 
+        </nav>
+        <nav class="redes">
+            <ul class="redes__lista">
+                <li class="redes__instagram"><a  href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener noreferrer"> Instagram </a> </li>
+                <li class="redes__tiktok"><a  href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer"> TikTok </a> </li>
+                <li class="redes__facebook"><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA" target="_blank" rel="noopener noreferrer"> Facebook </a> </li>
+            </ul>
+        </nav>
+        <p class="pie__derechos"> ©EcoMarket 2026</p>
+
+    </footer>
 </body>
 </html>
