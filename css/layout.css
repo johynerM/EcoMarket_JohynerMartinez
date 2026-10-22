@@ -51,6 +51,7 @@
     font-weight: bold;
     border-radius: 15px;
     background-color: #92e2b3;
+    white-space: nowrap;
 }
 .boton__menu:hover{
     color: #D4A373;
@@ -88,10 +89,18 @@
     gap: 0.5rem 1rem;
 }
 
-.principal{
+main.principal,
+main.catalogo{
     width: 100%;
-    margin: 1rem auto;
-    max-width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+}
+
+.principal{
+    padding: 1rem auto;
+    max-width: 1200px;
 }
 /* productos destacados */
 .destacados{
@@ -102,25 +111,26 @@
 }
 .destacados__lista {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1rem;
 }
 /* productos */
 
 .catalogo{
     width: 98%;
-    max-width: 100%;
-    margin: 1rem;
+    max-width: 1200px;
+    margin: 1rem 1rem;
     padding: 1rem;
 }
 .catalogo__contenido {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .catalogo__lista {
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: repeat(1,minmax(0,1fr));
     gap: 30px;
 }
 
@@ -139,7 +149,7 @@
 }
 .historia__imagen{
     width: 100%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
     object-fit: cover;
 }
 .historia__texto{
@@ -149,14 +159,14 @@
 .principios, .reseñas{
     margin-top: 2rem;
 }
-.principios__titulo, .reseña__titulo{
+.principios__titulo, .reseñas__titulo{
     font-weight: bold;
     margin-bottom: 2rem;
 }
 .principios__lista{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 1rem;
 }
 /* Carrusel de reseñas */
 
@@ -167,10 +177,10 @@
 }
 .reseñas__lista{
     display: flex;
-    width: 100%;
+    width: max-content;
 }
 .reseña{
-    flex: clamp(1.8rem, 2.5vw, 2.8rem);
+    flex: clamp(16rem, 75vw, 22rem) ;
     margin-right: 1.5rem;
 }
 .reseñas__puntos{
@@ -180,18 +190,98 @@
     margin-top: 1.5rem;
 }
 
-@media (min-width: 600px) {
-    .destacados__lista {
-        grid-template-columns: repeat(2,1fr);
+
+/* Tablet */
+@media (min-width: 600px){
+    .catalogo__lista,
+    .destacados__lista{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-@media (min-width: 800px) {
-    .destacados__lista {
-        grid-template-columns: repeat(3,1fr);
+ 
+/* Escritorio */
+@media (min-width: 800px){
+ 
+    /* Header*/
+    .encabezado{
+        flex-wrap: nowrap;
+        padding: 1.5rem 2rem;
+    }
+    .menu{
+        order: 0;
+        width: auto;
+        display: block;
+        padding: 0.4rem;
+        background-color: #fff;
+        border-radius: 999px;
+    }
+    .menu__lista{
+        display: flex;
+        gap: 0.25rem;
+    }
+    .menu__enlace{
+        padding: 0.7rem 1.4rem;
+        background-color: transparent;
+        border-radius: 999px;
+    }
+    .menu__enlace--activo{
+        background-color: var(--boton-oscuro);
+    }
+    .destacados__lista{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    /* Catálogo*/
+    .catalogo__contenido{
+        flex-direction: row;
+    }
+    .filtros{
+        flex: 0 0 16rem;
+        position: sticky;
+        top: 1rem;
+        align-self: flex-start;
+    }
+    .catalogo__productos{
+        flex: 1;
+        min-width: 0;
+    }
+ 
+    /* Sobre nosotros */
+    .historia{
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+    .historia__imagen{
+        flex: 1 1 0;
+        min-width: 0;
+    }
+    .historia__contenido{
+        flex: 1 1 0;
+    }
+    .principios__lista{
+        grid-template-columns: repeat(4, 1fr);
+    }
+ 
+    /* Footer en 3 bloques */
+    .pie{
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
+    .legal{
+        text-align: center;
+    }
+    .redes__lista{
+        justify-content: flex-end;
+    }
+    .pie__derechos{
+        grid-column: 1 / -1;
+        text-align: center;
     }
 }
-@media (min-width: 1024px) {
-    .destacados__lista {
-        grid-template-columns: repeat(4,1fr);
+ 
+/* Pantalla grande*/
+@media (min-width: 1100px){
+    .catalogo__lista{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
