@@ -39,6 +39,30 @@
     animation: punto-activo var(--duracion-carrusel) linear infinite;
 }
 
+.articulo,
+.resumen__boton,
+.articulo__cantidad{
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+                background-color 0.3s ease, border-color 0.3s ease;
+}
+ 
+.articulo:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+ 
+.resumen__boton:hover,
+.resumen__boton:focus-visible{
+    transform: translateY(-2px);
+    background-color: var(--color-verde-mid);
+}
+ 
+.articulo__eliminar:hover,
+.resumen__seguir:hover{
+    text-decoration: underline;
+}
+ 
+
 @keyframes deslizar{
     from{ transform: translateX(0); }
     to{ transform: translateX(-50%); }

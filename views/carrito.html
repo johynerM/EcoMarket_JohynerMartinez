@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revisa los productos de tu carrito en EcoMarket y finaliza tu compra responsable.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <title>Mi Carrito </title>
+</head>
+<body>
+    <header class="encabezado">
+        <input class="encabezado__abierto" type="checkbox" id="abre-cierra" aria-label="Abrir menú">
+        <a class="encabezado__enlace-logo" href="../index.html">
+            <img class="encabezado__logo" src="../img/logos/logo.jfif" alt="EcoMarket, ir al inicio">
+        </a>
+        <nav class="menu" aria-label="Menú principal">
+            <ul class="menu__lista">
+                <li><a class="menu__enlace" href="../index.html">Inicio</a></li>
+                <li><a class="menu__enlace" href="productos.html">Productos</a></li>
+                <li><a class="menu__enlace" href="sobre-nosotros.html">Nosotros</a></li>
+                <li><a class="menu__enlace" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="encabezado__accesos">
+            <a class="encabezado__carrito" href="carrito.html" aria-current="page">
+                <img class="encabezado__carrito-logo" src="../img/logos/carrito_logo.jfif" alt="Ir al carrito de compras">
+            </a>
+            <div class="encabezado__buscar" role="search">
+                <input class="buscar__texto" type="search" placeholder="Busca aquí tu producto deseado" aria-label="Buscar productos">
+                <button class="buscar__boton" type="button">
+                    <img src="../img/logos/buscar_logo.jfif" alt="Buscar">
+                </button>
+            </div>
+            <label class="boton__menu" for="abre-cierra">Menú</label>
+        </div>
+    </header>
+    <main class="principal">
+        <h1 class="carrito__titulo">Tu carrito</h1>
+
+        <div class="carrito__contenido">
+            <ul class="carrito__lista">
+                <li class="articulo" id="articulo-1">
+                    <img class="articulo__imagen" src="../img/productos/camisa.jfif" alt="Camiseta de algodón orgánico">
+                    <div class="articulo__info">
+                        <h2 class="articulo__nombre">Camiseta con algodón orgánico</h2>
+                        <p class="articulo__precio">$30.00 c/u</p>
+                    </div>
+                    <div class="articulo__acciones">
+                        <div class="articulo__campo">
+                            <label class="articulo__etiqueta" for="cantidad-1">Cantidad</label>
+                            <input class="articulo__cantidad" type="number" id="cantidad-1" name="cantidad-1" min="1" max="10" value="1">
+                        </div>
+                        <p class="articulo__subtotal">$30.00</p>
+                        <a class="articulo__eliminar" href="#articulo-1" aria-label="Eliminar camiseta del carrito">Eliminar</a>
+                    </div>
+                </li>
+                <li class="articulo" id="articulo-2">
+                    <img class="articulo__imagen" src="../img/productos/bolsa-organica.jfif" alt="Bolsa orgánica reutilizable">
+                    <div class="articulo__info">
+                        <h2 class="articulo__nombre">Bolsa orgánica</h2>
+                        <p class="articulo__precio">$5.00 c/u</p>
+                    </div>
+                    <div class="articulo__acciones">
+                        <div class="articulo__campo">
+                            <label class="articulo__etiqueta" for="cantidad-2">Cantidad</label>
+                            <input class="articulo__cantidad" type="number" id="cantidad-2" name="cantidad-2" min="1" max="10" value="2">
+                        </div>
+                        <p class="articulo__subtotal">$10.00</p>
+                        <a class="articulo__eliminar" href="#articulo-2" aria-label="Eliminar bolsa orgánica del carrito">Eliminar</a>
+                    </div>
+                </li>
+                <li class="articulo" id="articulo-3">
+                    <img class="articulo__imagen" src="../img/productos/detergente.jfif" alt="Detergente con empaque biodegradable">
+                    <div class="articulo__info">
+                        <h2 class="articulo__nombre">Detergente con empaque biodegradable</h2>
+                        <p class="articulo__precio">$8.00 c/u</p>
+                    </div>
+                    <div class="articulo__acciones">
+                        <div class="articulo__campo">
+                            <label class="articulo__etiqueta" for="cantidad-3">Cantidad</label>
+                            <input class="articulo__cantidad" type="number" id="cantidad-3" name="cantidad-3" min="1" max="10" value="1">
+                        </div>
+                        <p class="articulo__subtotal">$8.00</p>
+                        <a class="articulo__eliminar" href="#articulo-3" aria-label="Eliminar detergente del carrito">Eliminar</a>
+                    </div>
+                </li>
+            </ul>
+            <aside class="resumen" aria-label="Resumen del pedido">
+                <h2 class="resumen__titulo">Resumen del pedido</h2>
+                <dl class="resumen__lista">
+                    <div class="resumen__fila">
+                        <dt>Subtotal</dt>
+                        <dd>$48.00</dd>
+                    </div>
+                    <div class="resumen__fila">
+                        <dt>Envío</dt>
+                        <dd>$4.00</dd>
+                    </div>
+                    <div class="resumen__fila resumen__fila--total">
+                        <dt>Total</dt>
+                        <dd>$52.00</dd>
+                    </div>
+                </dl>
+                <a class="resumen__boton" href="contacto.html">Finalizar compra</a>
+                <a class="resumen__seguir" href="productos.html">Seguir comprando</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="pie">
+        <address> <p><a href="mailto:ecomarket@market.com">Este es nuestro Correo </a> </p>
+        <p><a href="tel:+573100000000"> Llamanos al +57: 310 000 0000</a></p>
+        </address>
+        <nav class="legal">
+            <a class="legal__terminos" href="#"> terminos y condiciones  </a> 
+        </nav>
+        <nav class="redes">
+            <ul class="redes__lista">
+                <li class="redes__instagram"><a  href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener noreferrer"> Instagram </a> </li>
+                <li class="redes__tiktok"><a  href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer"> TikTok </a> </li>
+                <li class="redes__facebook"><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA" target="_blank" rel="noopener noreferrer"> Facebook </a> </li>
+            </ul>
+        </nav>
+        <p class="pie__derechos"> ©EcoMarket 2026</p>
+    </footer>
+</body>
+</html>
