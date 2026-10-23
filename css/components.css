@@ -281,14 +281,125 @@
     height: 0.6rem;
     border: 0;
     border-radius: 50%;
-    background-color: #a9cdb6;       /* más oscuro que #cfe8d6 para que se vea */
+    background-color: #a9cdb6;
 }
 .reseñas__puntos{
     background: none;
     border: 0;
     box-shadow: none;
 }
+/* Conctacto */
 
+/*tarjeta */
+.contacto__info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--boton-oscuro);
+    border-radius: 24px;
+}
+
+.contacto__titulo,
+.contacto__texto{
+    color: #fff; 
+}
+.contacto__datos{
+    display: grid;
+    gap: 0.5rem;
+    font-style: normal;
+}
+.contacto__datos a{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.contacto__datos a:hover{
+    text-decoration: underline;
+}
+.contacto__redes{
+    display: flex;
+    gap: 0.75rem;
+    margin-top: auto; 
+    padding-top: 1rem;
+}
+.contacto__red{
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--boton-oscuro);
+    font-size: 0.85rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+/* Detalles del formulario */
+
+.formulario{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: var(--sombras-tarjetas);
+}
+.campo{
+    display: grid;
+    gap: 0.35rem;
+}
+.campo__error{
+    color: #0c0c0c98;
+}
+.campo__etiqueta{
+    font-weight: 500;
+}
+.campo__entrada{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #c9d1c9;
+    border-radius: 15px;
+    background-color: #fff;
+    color: var(--color-titulos);
+}
+textarea.campo__entrada{
+    min-height: 9rem;
+    resize: vertical;
+}
+.formulario__boton{
+    padding: 1rem;
+    border: 0;
+    border-radius: 999px;
+    background-color: var(--boton-oscuro);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Colores de validaciones */
+.campo__entrada:valid{
+    border-color: var(--boton-oscuro);
+}
+.campo__entrada:invalid{
+    border-color: var(--color-error);
+}
+.campo__entrada:focus-visible{
+    outline: 3px solid var(--color-resalto-verde);
+    outline-offset: 2px;
+}
+/* Mapa */
+
+.mapa__iframe{
+    border-radius: 36px;
+    background-color: #cfe8d6;
+    border: 4px solid black;
+}
+.mapa__leyenda{
+    margin-top: 0.5rem;
+    color: var(--color-subtitulos);
+    font-size: 0.85rem;
+    font-weight: bold;
+}
 
 @media (min-width: 800px){
     .tarjeta-grid{

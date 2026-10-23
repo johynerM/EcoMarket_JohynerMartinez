@@ -190,6 +190,22 @@ main.catalogo{
     margin-top: 1.5rem;
 }
 
+.contacto{
+    display: grid;
+    gap: 1.5rem;
+}
+.mapa{
+    margin-top: 2rem;
+}
+.mapa__titulo{
+    margin-bottom: 1rem;
+}
+.mapa__iframe{
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
 
 /* Tablet */
 @media (min-width: 600px){
@@ -198,7 +214,7 @@ main.catalogo{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
- 
+
 /* Escritorio */
 @media (min-width: 800px){
  
@@ -276,6 +292,15 @@ main.catalogo{
     .pie__derechos{
         grid-column: 1 / -1;
         text-align: center;
+    }
+    /* Contacto */
+    .contacto{
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr);
+        align-items: stretch;
+        gap: 2rem;
+    }
+    .mapa__iframe{
+        aspect-ratio: 3 / 1;
     }
 }
  
