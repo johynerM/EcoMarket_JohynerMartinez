@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <title> Sobre Nosotros </title>
+</head>
+<body>
+    <header class="encabezado">
+        <input class="encabezado__abierto" type="checkbox" id="abre-cierra">
+        <a class="encabezado__enlace-logo" href="../index.html">
+            <img class="encabezado__logo" src="../img/logos/logo.jfif" alt="EcoMarket, ir al inicio">
+        </a>
+        <nav class="menu" aria-label="Menú principal">
+            <ul class="menu__lista">
+                <li><a class="menu__enlace" href="../index.html">Inicio</a></li>
+                <li><a class="menu__enlace" href="productos.html">Nuestros Productos</a></li>
+                <li><a class="menu__enlace" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="menu__enlace menu__enlace--activo" href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="encabezado__accesos">
+            <a class="encabezado__carrito" href="carrito.html">
+                <img class="encabezado__carrito-logo" src="../img/logos/carrito_logo.jfif" alt="Ir al carrito de compras">
+            </a>
+            <div class="encabezado__buscar" role="search">
+                <input class="buscar__texto" type="search" placeholder="Busca aquí tu producto deseado" aria-label="Buscar productos">
+                <button class="buscar__boton" type="button">
+                    <img src="../img/logos/buscar_logo.jfif" alt="Buscar">
+                </button>
+            </div>
+            <label class="boton__menu" for="abre-cierra">Menú</label>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="contacto">
+            <div class="contacto__info">
+                <h1 class="contacto__titulo">Hablanos😁</h1>
+                <p class="contacto__texto">¿Tienes dudas sobre un producto o un pedido? Escríbenos y te respondemos pronto.</p>
+                <address class="contacto__datos">
+                    <a href="mailto:ecomarket@market.com">ecomarket@market.com</a>
+                    <a href="tel:+573100000000">+57 310 000 0000</a>
+                </address>
+                <ul class="contacto__redes">
+                    <li><a class="contacto__red" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../img/logos/instagram.jfif" alt="logo instagram"></a></li>
+                    <li><a class="contacto__red" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="../img/logos/tiktok.jfif" alt="logo tiktok"></a></li>
+                    <li><a class="contacto__red" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../img/logos/facebook.jfif" alt="logo facebook"></a></li>
+                </ul>
+            </div> 
+            <form class="formulario" action="#" method="get">
+                <div class="campo">
+                    <label class="campo__etiqueta" for="nombre">Nombre</label>
+                    <input class="campo__entrada" type="text" id="nombre" name="nombre"
+                           placeholder="Tu nombre" required minlength="2" autocomplete="name">
+                    <p class="campo__error">Escribe al menos 2 letras.</p>
+                </div>
+ 
+                <div class="campo">
+                    <label class="campo__etiqueta" for="email">Email</label>
+                    <input class="campo__entrada" type="email" id="email" name="email"
+                           placeholder="nombre@correo.com" required autocomplete="email">
+                    <p class="campo__error">Escribe un correo válido, por ejemplo nombre@correo.com.</p>
+                </div> 
+                <div class="campo">
+                    <label class="campo__etiqueta" for="mensaje">Mensaje</label>
+                    <textarea class="campo__entrada" id="mensaje" name="mensaje"
+                              placeholder="Cuéntanos en qué podemos ayudarte" required minlength="10"></textarea>
+                    <p class="campo__error">El mensaje debe tener al menos 10 caracteres.</p>
+                </div> 
+                <button class="formulario__boton" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+        <section class="mapa">
+            <h2 class="mapa__titulo">Dónde nos ubicamos</h2>
+            <figure class="mapa__figura">
+                <iframe class="mapa__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.3893648973535!2d-73.1035002!3d7.0807782999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f0480d9779d%3A0x44dca5fba37591be!2sMaxicarnes!5e0!3m2!1ses-419!2sco!4v1792712535411!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <figcaption class="mapa__leyenda">Mapa de ubicación de EcoMarket</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer class="pie">
+            <address> <p><a href="mailto:ecomarket@market.com">Este es nuestro Correo </a> </p>
+            <p><a href="tel:+573100000000"> Llamanos al +57: 310 000 0000</a></p>
+            </address>
+            <nav class="legal">
+                <a class="legal__terminos" href="#"> terminos y condiciones  </a> 
+            </nav>
+            <nav class="redes">
+                <ul class="redes__lista">
+                    <li class="redes__instagram"><a  href="https://www.instagram.com/?hl=es" target="_blank" rel="noopener noreferrer"> Instagram </a> </li>
+                    <li class="redes__tiktok"><a  href="https://www.tiktok.com/es/" target="_blank" rel="noopener noreferrer"> TikTok </a> </li>
+                    <li class="redes__facebook"><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA" target="_blank" rel="noopener noreferrer"> Facebook </a> </li>
+                </ul>
+            </nav>
+            <p class="pie__derechos"> ©EcoMarket 2026</p>
+
+        </footer>
+</body>
+</html>
