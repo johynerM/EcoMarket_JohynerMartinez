@@ -10,11 +10,13 @@
     transform: translateY(-5px);
     box-shadow: 0 4px 4px 4px  rgba(23, 22, 21, 0.7);
 }
-.principio, .testimonio, .principio__icono{
+.principio,
+.reseña,
+.principio__icono{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .principio:hover,
-.testimonio:hover{
+.reseña:hover{
     transform: translateY(-6px);
     box-shadow: var(--sombras-tarjetas);
 }
@@ -28,10 +30,8 @@
     animation: deslizar var(--duracion-carrusel) linear infinite;
 }
 
-.reseñas__carrusel:hover .reseñas__lista,
-.reseñas__carrusel:focus-within .reseñas__lista,
-.reseñas__carrusel:hover .reseñas__puntos,
-.reseñas__carrusel:focus-within .reseñas__puntos{
+.reseñas__carrusel:hover .reseñas__punto,
+.reseñas__carrusel:focus-within .reseñas__punto{
     animation-play-state: paused;
 }
 
@@ -60,6 +60,22 @@
 .articulo__eliminar:hover,
 .resumen__seguir:hover{
     text-decoration: underline;
+}
+
+.contacto__red,
+.formulario__boton,
+.campo__entrada{
+    transition: transform 0.3s ease, background-color 0.3s ease,
+                border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.contacto__red:hover,
+.contacto__red:focus-visible{
+    transform: scale(1.15);
+}
+.formulario__boton:hover,
+.formulario__boton:focus-visible{
+    transform: translateY(-2px);
+    background-color: var(--color-verde-mid);
 }
  
 
