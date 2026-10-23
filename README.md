@@ -69,7 +69,7 @@ No necesitas instalar nada: no hay dependencias ni paso de compilación.
 | Menú desplegable en móvil | `<input type="checkbox">` + `<label>` + selector `:checked ~ .menu` |
 | Botón de favoritos | Checkbox oculto + `:checked + label` |
 | Validación del formulario | `:valid` e `:invalid` (y `:placeholder-shown` para los mensajes de ayuda) |
-| Carrusel automático de reseñas | `@keyframes` con `translateX(-50%)` sobre tarjetas duplicadas; se pausa con `:hover` |
+| Carrusel automático de reseñas | `@keyframes` con `translateX(-50%)` sobre tarjetas duplicadas; |
 | Eliminar un artículo del carrito | `:target` sobre el id de cada artículo |
 | Sidebar de filtros fijo | `position: sticky` |
 | Tarjetas que se elevan | `transition` + `transform: translateY()` |
